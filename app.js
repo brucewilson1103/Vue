@@ -6,6 +6,7 @@ new Vue({
     url: "http://www.youtube.com",
     classes: ["one", "two"],
     wage: 10,
+    pet: "dog",
     coords: {
       x:0,
       y:0
@@ -18,6 +19,10 @@ new Vue({
     },
     wageIncrease(){
       this.wage++;
+    },
+    updateName(e){
+      this.name = e.target.value
+        // console.log(e.target.value)
     },
     wageDecrease(){
       this.wage--;

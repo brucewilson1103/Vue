@@ -27,7 +27,12 @@
     <h2>
       {{ title }}
     </h2>
+    <p>My Name is {{name}}</p>
+    <p>I have a {{pet}} for a pet.</p>
+    <input type="text" v-model="pet">
+    
     <p>{{greet("evening")}}</p>
+    <input type="text" @keyup="updateName">
 
     <a v-bind:href="url">Click here for YouTube</a>
     <div v-bind:class="classes">Classes from instance</div>
