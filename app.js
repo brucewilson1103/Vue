@@ -10,7 +10,8 @@ new Vue({
     coords: {
       x:0,
       y:0
-    }
+    },
+    showName:false
   },
   
   methods: {
